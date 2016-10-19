@@ -1,0 +1,28 @@
+{
+  "name": "arid",
+  "version": "0.0.0",
+  "description": "Check if array is absolutely empty.",
+  "main": "arid.js",
+  "authors": [
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "check",
+    "array",
+    "empty",
+    "arid"
+  ],
+  "homepage": "https://github.com/volkovasystems/arid",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "doubt": "^0.0.4",
+    "truly": "^0.0.0"
+  }
+}
