@@ -1,11 +1,10 @@
 {
   "name": "arid",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "dependencies": {
     "doubt": {
-      "version": "0.0.4",
-      "from": "doubt@*",
-      "resolved": "https://registry.npmjs.org/doubt/-/doubt-0.0.4.tgz",
+      "version": "0.0.5",
+      "from": "doubt@latest",
       "dependencies": {
         "harden": {
           "version": "0.3.5",

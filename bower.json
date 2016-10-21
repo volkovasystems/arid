@@ -1,6 +1,6 @@
 {
   "name": "arid",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Check if array is absolutely empty.",
   "main": "arid.js",
   "authors": [
@@ -22,7 +22,7 @@
     "tests"
   ],
   "dependencies": {
-    "doubt": "^0.0.4",
-    "truly": "^0.0.0"
+    "truly": "^0.0.0",
+    "doubt": "^0.0.5"
   }
 }
