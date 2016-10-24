@@ -1,10 +1,10 @@
 {
   "name": "arid",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "dependencies": {
     "doubt": {
-      "version": "0.0.5",
-      "from": "doubt@latest",
+      "version": "0.0.6",
+      "from": "doubt@*",
       "dependencies": {
         "harden": {
           "version": "0.3.5",
