@@ -86,6 +86,7 @@ var arid = function arid( array ){
 	}
 
 	return ( array.length == 0 ||
+		
 		array.filter( function onEachItem( item ){
 			return truly( item );
 		} ).length == 0 );
