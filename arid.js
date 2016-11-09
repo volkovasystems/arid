@@ -68,7 +68,7 @@ if( typeof window != "undefined" && !( "truly" in window ) ){
 	throw new Error( "truly is not defined" );
 }
 
-this.arid = function arid( array ){
+var arid = function arid( array ){
 	/*;
 		@meta-configuration:
 			{
@@ -85,5 +85,5 @@ this.arid = function arid( array ){
 };
 
 if( typeof module != "undefined" && typeof module.exports != "undefined" ){
-	module.exports = this.arid;
+	module.exports = arid;
 }
