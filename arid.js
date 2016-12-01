@@ -55,20 +55,10 @@
 	@end-include
 */
 
-if( typeof require == "function" ){
-	var doubt = require( "doubt" );
-	var truly = require( "truly" );
-}
+const doubt = require( "doubt" );
+const truly = require( "truly" );
 
-if( typeof window != "undefined" && !( "doubt" in window ) ){
-	throw new Error( "doubt is not defined" );
-}
-
-if( typeof window != "undefined" && !( "truly" in window ) ){
-	throw new Error( "truly is not defined" );
-}
-
-var arid = function arid( array ){
+const arid = function arid( array ){
 	/*;
 		@meta-configuration:
 			{
@@ -84,6 +74,4 @@ var arid = function arid( array ){
 	return ( array.length == 0 || array.filter( truly ).length == 0 );
 };
 
-if( typeof module != "undefined" && typeof module.exports != "undefined" ){
-	module.exports = arid;
-}
+module.exports = arid;
