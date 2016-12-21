@@ -58,23 +58,23 @@
 	@end-include
 */
 
-const doubt = require( "doubt" );
-const truly = require( "truly" );
+var doubt = require("doubt");
+var truly = require("truly");
 
-const arid = function arid( array ){
+var arid = function arid(array) {
 	/*;
-		@meta-configuration:
-			{
-				"array:required": "[*]"
-			}
-		@end-meta-configuration
-	*/
+ 	@meta-configuration:
+ 		{
+ 			"array:required": "[*]"
+ 		}
+ 	@end-meta-configuration
+ */
 
-	if( !doubt( array ).ARRAY ){
-		throw new Error( "invalid array" );
+	if (!doubt(array).ARRAY) {
+		throw new Error("invalid array");
 	}
 
-	return ( array.length == 0 || array.filter( truly ).length == 0 );
+	return array.length == 0 || array.filter(truly).length == 0;
 };
 
 module.exports = arid;

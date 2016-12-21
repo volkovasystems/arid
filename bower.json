@@ -1,10 +1,13 @@
 {
   "name": "arid",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Check if array is absolutely empty.",
   "main": "arid.js",
+  "support": "arid.support.js",
+  "deploy": "arid.deploy.js",
   "authors": [
-    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
   ],
   "license": "MIT",
   "keywords": [
@@ -22,7 +25,7 @@
     "tests"
   ],
   "dependencies": {
-    "doubt": "^0.4.0",
-    "truly": "^0.3.0"
+    "doubt": "^0.6.0",
+    "truly": "^0.5.0"
   }
 }
