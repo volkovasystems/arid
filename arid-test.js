@@ -2,4 +2,4 @@
 
 const arid = require( "./arid.js" );
 
-console.log( arid( [ 1 ] ) );
+console.log( arid( [  ] ) );
