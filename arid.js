@@ -70,7 +70,7 @@ const arid = function arid( array ){
 		@end-meta-configuration
 	*/
 
-	if( !doubt( array ).ARRAY ){
+	if( !doubt( array, ARRAY ) ){
 		throw new Error( "invalid array" );
 	}
 
