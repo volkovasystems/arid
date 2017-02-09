@@ -2286,9 +2286,9 @@ tough-cookie@~2.3.0:
   dependencies:
     punycode "^1.4.1"
 
-truly@^0.10.0:
-  version "0.10.0"
-  resolved "https://registry.yarnpkg.com/truly/-/truly-0.10.0.tgz#8c196ad4df7d89d8628dc8f760d50ee60e358ab8"
+truly@^0.11.0:
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/truly/-/truly-0.11.0.tgz#7465f07bbf0ffec1566458fdc71f37cf3ec54170"
   dependencies:
     babel-runtime "^6.22.0"
     protype "^0.15.0"
