@@ -1,6 +1,6 @@
 {
   "name": "arid",
-  "version": "0.10.0",
+  "version": "0.11.0",
   "description": "Check if array is absolutely empty.",
   "main": "arid.js",
   "support": "arid.support.js",
@@ -31,7 +31,7 @@
   "homepage": "https://github.com/volkovasystems/arid#readme",
   "dependencies": {
     "babel-runtime": "^6.22.0",
-    "doubt": "^0.12.0",
+    "doubt": "^0.13.0",
     "truly": "^0.11.0"
   },
   "devDependencies": {
