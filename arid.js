@@ -52,14 +52,14 @@
 
 	@include:
 		{
-			"doubt": "doubt",
-			"truly": "truly"
+			"arkount": "arkount",
+			"doubt": "doubt"
 		}
 	@end-include
 */
 
+const arkount = require( "arkount" );
 const doubt = require( "doubt" );
-const truly = require( "truly" );
 
 const arid = function arid( array ){
 	/*;
@@ -70,11 +70,11 @@ const arid = function arid( array ){
 		@end-meta-configuration
 	*/
 
-	if( !doubt( array, ARRAY ) ){
+	if( !doubt( array, AS_ARRAY ) ){
 		throw new Error( "invalid array" );
 	}
 
-	return ( array.length == 0 || array.filter( truly ).length == 0 );
+	return ( arkount( array ) == 0 );
 };
 
 module.exports = arid;
