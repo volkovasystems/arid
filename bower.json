@@ -1,6 +1,6 @@
 {
   "name": "arid",
-  "version": "0.24.0",
+  "version": "0.25.0",
   "description": "Check if array is absolutely empty.",
   "main": "arid.deploy.js",
   "support": "arid.support.js",
@@ -24,7 +24,7 @@
     "tests"
   ],
   "dependencies": {
-    "arkount": "^0.6.0",
-    "doubt": "^0.25.0"
+    "arkount": "^0.7.0",
+    "doubt": "^0.26.0"
   }
 }
