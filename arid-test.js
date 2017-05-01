@@ -1,7 +1,10 @@
 "use strict";
 
+const assert = require( "assert" );
 const arid = require( "./arid.js" );
 
-console.log( arid( [  ] ) );
-console.log( arid( [ { } ] ) );
-console.log( arid( [ 1, 2, 3 ] ) );
+assert.equal( arid( [  ] ), true, "should be true" );
+assert.equal( arid( [ { } ] ), false, "should be false" );
+assert.equal( arid( [ 1, 2, 3 ] ), false, "should be false" );
+
+console.log( "ok" );
