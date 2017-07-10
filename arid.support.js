@@ -53,14 +53,12 @@
               
               	@include:
               		{
-              			"arkount": "arkount",
-              			"doubt": "doubt"
+              			"arkount": "arkount"
               		}
               	@end-include
               */
 
 var arkount = require("arkount");
-var doubt = require("doubt");
 
 var arid = function arid(array) {
 	/*;
@@ -70,10 +68,6 @@ var arid = function arid(array) {
                                  		}
                                  	@end-meta-configuration
                                  */
-
-	if (!doubt(array, AS_ARRAY)) {
-		throw new Error("invalid array");
-	}
 
 	return arkount(array) == 0;
 };
