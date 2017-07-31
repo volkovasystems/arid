@@ -55,19 +55,15 @@
 	@end-include
 */
 
-const assert = require( "assert" );
+const assert = require( "should" );
 
 //: @server:
 const arid = require( "./arid.js" );
 //: @end-server
 
-//: @client:
-const arid = require( "./arid.support.js" );
-//: @end-client
 
-//: @bridge:
-const path = require( "path" );
-//: @end-bridge
+
+
 
 //: @server:
 describe( "arid", ( ) => {
@@ -95,37 +91,10 @@ describe( "arid", ( ) => {
 //: @end-server
 
 
-//: @client: 
-
-describe( "arid", ( ) => {
-	
-	describe( `"arid( [ ] )"`, ( ) => {
-		it( "should return true", ( ) => {
-
-			assert.equal( arid( [ ] ), true );
-
-		} );
-	} );
-
-	describe( `"arid( [ 1, 2, 3 ] )"`, ( ) => {
-	it( "should return false", ( ) => {
-
-			assert.equal( arid( [ 1, 2, 3 ] ), false);
-
-		} );
-	} );
-
-	
-} );
-
-//: @end-client
-
-
-//: @bridge:
 
 
 
-//: @end-bridge
+
 
 
 // assert.equal( arid( [ ] ), true, "should return true" );

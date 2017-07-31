@@ -1,0 +1,46 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2017-07-31T05:55:46.796Z",
+    "end": "2017-07-31T05:55:46.802Z",
+    "duration": 6
+  },
+  "tests": [
+    {
+      "title": "should return true",
+      "fullTitle": "arid \"arid( [ ] )\" should return true",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return false",
+      "fullTitle": "arid \"arid( [ 1, 2, 3 ] )\" should return false",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [],
+  "passes": [
+    {
+      "title": "should return true",
+      "fullTitle": "arid \"arid( [ ] )\" should return true",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return false",
+      "fullTitle": "arid \"arid( [ 1, 2, 3 ] )\" should return false",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}
