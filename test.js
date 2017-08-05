@@ -67,24 +67,23 @@ const arid = require( "./arid.js" );
 
 //: @server:
 describe( "arid", ( ) => {
-	
-	describe( `"arid( [ ] )"`, ( ) => {
-		it( "should return true", ( ) => {
+
+	describe( "`arid( [ ] )`", ( ) => {
+		it( "should be equal to true", ( ) => {
 
 			assert.equal( arid( [ ] ), true );
 
 		} );
 	} );
 
-	describe( `"arid( [ 1, 2, 3 ] )"`, ( ) => {
-	it( "should return false", ( ) => {
+
+	describe( "`arid( [ 1, 2, 3 ] )`", ( ) => {
+	it( "should be equal to false", ( ) => {
 
 			assert.equal( arid( [ 1, 2, 3 ] ), false);
 
 		} );
 	} );
-
-	
 } );
 
 
@@ -94,11 +93,3 @@ describe( "arid", ( ) => {
 
 
 
-
-
-
-// assert.equal( arid( [ ] ), true, "should return true" );
-
-// assert.equal( arid( [ 1, 2, 3 ] ), false, "should return false" );
-
-// console.log( "ok" );

@@ -5,22 +5,22 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2017-07-31T05:55:46.796Z",
-    "end": "2017-07-31T05:55:46.802Z",
-    "duration": 6
+    "start": "2017-08-05T11:06:36.323Z",
+    "end": "2017-08-05T11:06:36.330Z",
+    "duration": 7
   },
   "tests": [
     {
-      "title": "should return true",
-      "fullTitle": "arid \"arid( [ ] )\" should return true",
+      "title": "should be equal to true",
+      "fullTitle": "arid `arid( [ ] )` should be equal to true",
       "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
-      "title": "should return false",
-      "fullTitle": "arid \"arid( [ 1, 2, 3 ] )\" should return false",
-      "duration": 0,
+      "title": "should be equal to false",
+      "fullTitle": "arid `arid( [ 1, 2, 3 ] )` should be equal to false",
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     }
@@ -29,16 +29,16 @@
   "failures": [],
   "passes": [
     {
-      "title": "should return true",
-      "fullTitle": "arid \"arid( [ ] )\" should return true",
+      "title": "should be equal to true",
+      "fullTitle": "arid `arid( [ ] )` should be equal to true",
       "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
-      "title": "should return false",
-      "fullTitle": "arid \"arid( [ 1, 2, 3 ] )\" should return false",
-      "duration": 0,
+      "title": "should be equal to false",
+      "fullTitle": "arid `arid( [ 1, 2, 3 ] )` should be equal to false",
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     }

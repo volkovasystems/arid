@@ -72,7 +72,7 @@ const path = require( "path" );
 //: @server:
 describe( "arid", ( ) => {
 
-	describe( `"arid( [ ] )"`, ( ) => {
+	describe( "`arid( [ ] )`", ( ) => {
 		it( "should be equal to true", ( ) => {
 
 			assert.equal( arid( [ ] ), true );
@@ -80,15 +80,14 @@ describe( "arid", ( ) => {
 		} );
 	} );
 
-	describe( `"arid( [ 1, 2, 3 ] )"`, ( ) => {
+
+	describe( "`arid( [ 1, 2, 3 ] )`", ( ) => {
 	it( "should be equal to false", ( ) => {
 
 			assert.equal( arid( [ 1, 2, 3 ] ), false);
 
 		} );
 	} );
-
-
 } );
 
 
@@ -99,7 +98,7 @@ describe( "arid", ( ) => {
 
 describe( "arid", ( ) => {
 
-	describe( `"arid( [ ] )"`, ( ) => {
+	describe( "`arid( [ ] )`", ( ) => {
 		it( "should be equal to true", ( ) => {
 
 			assert.equal( arid( [ ] ), true );
@@ -107,16 +106,17 @@ describe( "arid", ( ) => {
 		} );
 	} );
 
-	describe( `"arid( [ 1, 2, 3 ] )"`, ( ) => {
+
+	describe( "`arid( [ 1, 2, 3 ] )`", ( ) => {
 	it( "should be equal to false", ( ) => {
 
 			assert.equal( arid( [ 1, 2, 3 ] ), false);
 
 		} );
 	} );
-
-
 } );
+
+
 
 //: @end-client
 
