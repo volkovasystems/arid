@@ -71,9 +71,9 @@ const path = require( "path" );
 
 //: @server:
 describe( "arid", ( ) => {
-	
+
 	describe( `"arid( [ ] )"`, ( ) => {
-		it( "should return true", ( ) => {
+		it( "should be equal to true", ( ) => {
 
 			assert.equal( arid( [ ] ), true );
 
@@ -81,26 +81,26 @@ describe( "arid", ( ) => {
 	} );
 
 	describe( `"arid( [ 1, 2, 3 ] )"`, ( ) => {
-	it( "should return false", ( ) => {
+	it( "should be equal to false", ( ) => {
 
 			assert.equal( arid( [ 1, 2, 3 ] ), false);
 
 		} );
 	} );
 
-	
+
 } );
 
 
 //: @end-server
 
 
-//: @client: 
+//: @client:
 
 describe( "arid", ( ) => {
-	
+
 	describe( `"arid( [ ] )"`, ( ) => {
-		it( "should return true", ( ) => {
+		it( "should be equal to true", ( ) => {
 
 			assert.equal( arid( [ ] ), true );
 
@@ -108,28 +108,57 @@ describe( "arid", ( ) => {
 	} );
 
 	describe( `"arid( [ 1, 2, 3 ] )"`, ( ) => {
-	it( "should return false", ( ) => {
+	it( "should be equal to false", ( ) => {
 
 			assert.equal( arid( [ 1, 2, 3 ] ), false);
 
 		} );
 	} );
 
-	
+
 } );
 
 //: @end-client
 
-
 //: @bridge:
 
+describe( "arid", ( ) => {
 
+	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
+
+	describe( "`arid( [ ] )`", ( ) => {
+		it( "should be equal to true", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return arid( [ ] );
+				}
+
+			).value;
+
+			assert.equal( result, true );
+
+		} );
+	} );
+
+
+	describe( "`arid( [ 1, 2, 3 ] )`", ( ) => {
+		it( "should be equal to false", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return arid( [ 1, 2, 3 ] );
+				}
+
+			).value;
+
+			assert.equal( result, false );
+
+		} );
+	} );
+
+} );
 
 //: @end-bridge
-
-
-// assert.equal( arid( [ ] ), true, "should return true" );
-
-// assert.equal( arid( [ 1, 2, 3 ] ), false, "should return false" );
-
-// console.log( "ok" );
