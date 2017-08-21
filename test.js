@@ -78,9 +78,9 @@ describe( "arid", ( ) => {
 
 
 	describe( "`arid( [ 1, 2, 3 ] )`", ( ) => {
-	it( "should be equal to false", ( ) => {
+		it( "should be equal to false", ( ) => {
 
-			assert.equal( arid( [ 1, 2, 3 ] ), false);
+			assert.equal( arid( [ 1, 2, 3 ] ), false );
 
 		} );
 	} );

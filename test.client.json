@@ -1,0 +1,116 @@
+{
+	"state": {
+		"passed": 2,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-08-21T10:09:27.223Z",
+	"end": "2017-08-21T10:10:01.770Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": null
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "arid",
+			"duration": 0,
+			"start": "2017-08-21T10:10:01.442Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "arid",
+			"duration": 150,
+			"start": "2017-08-21T10:10:01.442Z",
+			"end": "2017-08-21T10:10:01.592Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-08-21T10:10:01.445Z",
+					"end": "2017-08-21T10:10:01.445Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "arid",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-08-21T10:10:01.541Z",
+					"end": "2017-08-21T10:10:01.541Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "arid",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-08-21T10:10:01.542Z",
+					"end": "2017-08-21T10:10:01.542Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "arid",
+					"associatedTest": "should be equal to false"
+				},
+				{
+					"start": "2017-08-21T10:10:01.592Z",
+					"end": "2017-08-21T10:10:01.592Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "arid",
+					"associatedTest": "should be equal to false"
+				},
+				{
+					"start": "2017-08-21T10:10:01.592Z",
+					"end": "2017-08-21T10:10:01.593Z",
+					"duration": 1,
+					"title": "\"after all\" hook",
+					"associatedSuite": "arid"
+				}
+			]
+		},
+		{
+			"name": "`arid( [ ] )`",
+			"duration": 99,
+			"start": "2017-08-21T10:10:01.443Z",
+			"end": "2017-08-21T10:10:01.542Z",
+			"tests": [
+				{
+					"name": "should be equal to true",
+					"start": "2017-08-21T10:10:01.444Z",
+					"end": "2017-08-21T10:10:01.541Z",
+					"duration": 97,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`arid( [ 1, 2, 3 ] )`",
+			"duration": 50,
+			"start": "2017-08-21T10:10:01.542Z",
+			"end": "2017-08-21T10:10:01.592Z",
+			"tests": [
+				{
+					"name": "should be equal to false",
+					"start": "2017-08-21T10:10:01.542Z",
+					"end": "2017-08-21T10:10:01.592Z",
+					"duration": 50,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}
